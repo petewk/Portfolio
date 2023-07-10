@@ -1,38 +1,104 @@
+@font-face {
+    font-family: "Card";
+    src: local("CARDC"), url("./fonts/CARDC.TTF") format("truetype");
+  }
+
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(110,128,186,1) 11%, rgb(109 64 64) 83%);
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(110,128,186,1);
+    border-radius: 5px;
+    transition: .2s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(65, 85, 153);
+    transition: .2s;
+  }
+
+
 #fullBody {
     width: 75%;
     margin:0 auto;
     justify-content: center;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
     display: block;
-    height: 100vh;
+    height: 90vh;
+    overflow: auto;
+    margin-top: 5vh;
+    background-color: white;
+}
+
+#headerBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 #mainTitle {
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
-    height: 100px;
-    padding-top: 30px;
-    margin-top: 0px;
+    padding: 50px 0px 30px 0px;
+    margin: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: #6e80ba;
+    letter-spacing: 0.09rem;
 }
 
-#overlay {
-    width: 100vw;
-    height: 15vh;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 9%, rgba(255,255,255,0) 83%);
-    z-index: 100;
+#portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 75px;
+    margin: 20px;
 }
 
 #bioSection {
     width: 90%;
-    border-top: 1px solid black;
+    border-top: 2px solid rgb(109 64 64);
     border-bottom: 1px solid black;
     margin: 0 auto;
-    height: 200px;
+    height: 450px;
     text-align: center;
-    padding-top: 25px;
+    padding: 40px 0px;
+}
+
+#bioHeader {
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Dosis', sans-serif;
+    color: #6e80ba
+}
+
+#bioText {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+#githubLogo {
+    float:right;
+    width: 130px;
+    margin: 12px;
+}
+
+#workExamples {
+    padding: 50px 0px 100px 0px;
 }
 
 #workExamples h2 {
@@ -60,6 +126,11 @@
 .pageTitle p {
     display: inline-block;
     height: inherit;
+    margin-left: 20px;
+}
+
+#techList {
+    float: left;
 }
 
 
@@ -68,6 +139,7 @@
 #Poker {
     background-color: #08844e;
     color: black;
+    font-family: 'Card'
 }
 
 #Poker h3 {
@@ -81,6 +153,8 @@
 #Boat {
     background-color: #0b3c62;
     color: #a58d6f;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .08em;
 }
 
 #Boat h3 {
@@ -91,11 +165,20 @@
 /* Drone Link Styling */
 
 #Drone {
-    
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1em;
+    background-color: #f3f3f3;
+    color: #3f6163;
 }
 
 #Drone h3 {
     color: #3f6163;
+    border: 2px solid #3f6163;
+    border-radius: 5px;
+}
+
+#Drone p {
+    font-weight: 600;
 }
 
 
@@ -108,14 +191,16 @@
     justify-content: space-between;
     float: right;
     width: 0px;
-    transition: .3s;
+    transition: 1s;
+    transition-delay: .5s;
     background-color: lightgray;
     border-radius: 5px;
     height: inherit;
+    display: flex;
 }
 
 .linkOuter:hover .logoSection {
-    width: 250px;
+    width: 275px;
     transition: .3s;
     display: flex;
     justify-content: space-between;
@@ -128,4 +213,42 @@
     display: inline;
     height: 50px;
     padding-top: 15px;
+}
+
+.exampleFrame {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    transition: .6s;
+    border: none;
+    overflow: hidden;
+    height: 0px;
+}
+
+.iframeButton {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background-color: #6e80ba61;
+    height: 20px;
+    position: relative;
+
+}
+
+.buttonBuffer {
+    top: -25px;
+}
+
+.expand {
+    height: 600px;
+    transition: .6s;
+}
+
+.fa-solid {
+    transition: .5s;
+}
+
+a {
+    color: inherit;
 }

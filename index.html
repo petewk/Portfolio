@@ -3,63 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d72bd5e58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
     <title>PK Code</title>
 </head>
 <body>
-    <container id="fullBody">
-        <h1 id="mainTitle">Pete Kerr Code Portfolio</h1>
+    <container id="fullBody">   
+        <div id="headerBox"> 
+            <img id="portrait" src="./images/portait.png">
+            <h1 id="mainTitle">Pete Kerr Code Portfolio</h1>
+
+            <a href="https://github.com/petewk" target="_blank">
+               <img id="githubLogo"  src="./images/1024px-Github-desktop-logo-symbol.svg.png" alt="">
+            </a>
+        </div>
+        
+
         <div id="bioSection">
-            This is the bio. <br />
-            Here I'm going to talk about how handsome and clever I am
+            <h2 id="bioHeader">A bit about me</h2>
+            <div id="bioText">
+
+                Aspiring front-end/full stack web developer, self taught through online classes, specifically on Udemy. <br />
+                Have worked with: <br />
+                    <ul id="techList">
+                        <li>HTML</li>
+                        <li>JS</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>Node.js</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                
+                
+            </a>
+
+            
         </div>
         <div id="workExamples">
             <h2>Here's some of my other work</h2>
 
 
             <section>
-                <a href="https://poker-timer-7367af045710.herokuapp.com/" target="_blank" class="linkOuter">
+                <div class="linkOuter">
                     <div class="linkBody" id="Poker">
-                        <div class="pageTitle">
-                            <h3>Poker Blind Timer</h3>
-                            <p>Clock for setting Poker Game Times</p>
-                        </div>
+                        <a href="https://poker-timer-7367af045710.herokuapp.com/" target="_blank">
+                            <div class="pageTitle">
+                                <h3>Poker Blind Timer</h3>
+                                <p>Clock for setting Poker Game Times</p>
+                            </div>
+                        </a>
                         <div class="logoSection">
                             <img src="./images/react.png" alt="" class="langLogo">
                             <img src="./images/css.png" alt="" class="langLogo">
-                            
+                            <a href="https://github.com/petewk/new-poker-timer" target="_blank">
+                                <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="langLogo" href="https://github.com/petewk/new-poker-timer">                            
+                            </a>
                         </div>
                         
                     </div>
-                </a>
+                </div>
+                <iframe class="exampleFrame hidden" src="https://poker-timer-7367af045710.herokuapp.com/">
+
+                </iframe>
+                <button class="iframeButton buttonBuffer" onclick="expandSample()"><i class="fa-solid fa-caret-down"></i></button>
                 
-                <a href="https://boat-wiki.herokuapp.com/" target="_blank" class="linkOuter">
+
+                <div  class="linkOuter">
                    <div class="linkBody" id="Boat">
-                    <div class="pageTitle">
-                        <h3>Boat Info Wiki</h3>
-                        <p>Wiki style page with Rich Text Editor</p>
-                    </div>
+                    <a href="https://boat-wiki.herokuapp.com/" target="_blank">
+                        <div class="pageTitle">
+                            <h3>Boat Info Wiki</h3>
+                            <p>Wiki style page with Rich Text Editor</p>
+                        </div>
+                    </a>
                     <div class="logoSection">
                         <img src="./images/react.png" alt="" class="langLogo">
                         <img src="./images/node.png" alt="" class="langLogo">
                         <img src="./images/mysql.png" alt="" class="langLogo">
                         <img src="./images/css.png" alt="" class="langLogo">
+                        <a href="https://github.com/petewk/react-boat-info" target="_blank">
+                            <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="langLogo" href="https://github.com/petewk/new-poker-timer">                            
+                        </a>
                     </div>
                    </div>
-                </a>
+                </div>
+                <iframe class="exampleFrame hidden" src="https://boat-wiki.herokuapp.com/">
 
-                <a href="https://stevsite.netlify.app/" target="_blank" class="linkOuter">
+                </iframe>
+                <button class="iframeButton buttonBuffer" onclick="expandSample()"><i class="fa-solid fa-caret-down "></i></button>
+
+
+                <div  class="linkOuter">
                    <div class="linkBody" id="Drone">
-                    <div class="pageTitle">
-                        <h3>Photography Company Website</h3>
-                    </div>
+                    <a href="https://stevsite.netlify.app/" target="_blank">
+                        <div class="pageTitle">
+                            <h3>Photography Company Website</h3>
+                            <p>Commercial Site for small Photography company</p>
+                        </div>
+                    </a>
                     <div class="logoSection">
                         <img src="./images/html.png" alt="" class="langLogo">
                         <img src="./images/javascript.png" alt="" class="langLogo">
                         <img src="./images/css.png" alt="" class="langLogo">
+                        <a href="https://github.com/petewk/react-boat-info" target="_blank">
+                            <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="langLogo" href="https://github.com/petewk/new-poker-timer">                            
+                        </a>
                     </div>
                    </div>
-                </a>
+                </div>
+                <iframe class="exampleFrame hidden" src="https://stevsite.netlify.app/">
+
+                </iframe>
+                <button class="iframeButton buttonBuffer" onclick="expandSample()"><i class="fa-solid fa-caret-down"></i></button>
+
             </section>
         </div>
 
