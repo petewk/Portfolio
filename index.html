@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d72bd5e58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
     <title>PK Code</title>
@@ -26,17 +28,31 @@
             <h2 id="bioHeader">A bit about me</h2>
             <div id="bioText">
 
-                Aspiring front-end/full stack web developer, self taught through online classes, specifically on Udemy. <br />
-                Have worked with: <br />
-                    <ul id="techList">
-                        <li>HTML</li>
-                        <li>JS</li>
-                        <li>CSS</li>
-                        <li>React</li>
-                        <li>Bootstrap</li>
-                        <li>Node.js</li>
-                        <li>MySQL</li>
-                    </ul>
+                I'm an aspiring front-end/full stack web developer, and have spent my free time teaching myself through online materials, mainly from Udemy.com and specifically Dr. Angela Yu of <a id="breweryLink" href="https://appbrewery.com/" target="_blank">The App Brewery</a>, whose course has taught me the most and kept me encouraged in my progress <br />
+                I was drawn in by the potential do something creative, and fell in love with the problem solving aspect and the catharsis of getting a project working after it's been puzzling you. <br />
+                <br />
+                <div class="bioList left">
+                    So far, I have worked with: <br />
+                        <ul class="techList">
+                            <li>HTML</li>
+                            <li>JS</li>
+                            <li>jQuery</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                            <li>Bootstrap</li>
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                        </ul>
+                </div>
+
+                <div class="bioList right">
+                    I am looking for: <br />
+                        <ul class="techList">
+                            <li>A supportive and understanding environment to develop my skills</li>
+                            <li>New challenges to push me to test my abilities</li>
+                            <li>A forward looking company where I can gain context and understanding of new and upcoming technologies</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 
@@ -45,7 +61,7 @@
             
         </div>
         <div id="workExamples">
-            <h2>Here's some of my other work</h2>
+            <h2> <i class="fa-solid fa-angles-down"></i>Here's some of my other work<i class="fa-solid fa-angles-down"></i></h2>
 
 
             <section>
@@ -122,6 +138,73 @@
                 <button class="iframeButton buttonBuffer" onclick="expandSample()"><i class="fa-solid fa-caret-down"></i></button>
 
             </section>
+
+            <h2>More to come, watch this space...</h2>
+        </div>
+
+        <div id="personal">
+            <h2>Some personal stuff...</h2>
+            <p>If I'm not working, I'll likely be playing <i onclick="showDetails()" class="bioDetail" id="games">video games</i>, trying to learn a new <i onclick="showDetails()" class="bioDetail" id="food">dish to cook</i>, trying to find a place to get a <i onclick="showDetails()" class="bioDetail" id="drink">good cocktail</i> (or just make one myself), or dreaming about <i onclick="showDetails()" class="bioDetail" id="travel">travelling the world</i></p>
+            <div id="detailsWindow">
+                <div class="Window" id="default">
+                    <h3>Click above to see my favourites</h3>
+                </div>
+
+                <div class="games Window transparent">
+                    <img class="gamesImg" src="./images/rocketLeague.png" alt="">
+                    <img class="gamesImg" src="./images/factorio.png" alt="">
+                    <img class="gamesImg" src="./images/dsp.png" alt="">
+                </div>
+
+                <div class="food Window transparent">
+                    <div class="foodDiv carbonara">
+                        <div class="cover">
+                            <h5>Carbonara</h5>
+                            <p>pasta dish made with eggs, hard cheese, cured pork, and black pepper</p>
+                        </div>
+                    </div>
+                    <div class="foodDiv ramen">
+                        <div class="cover">
+                            <h5>Ramen</h5>
+                            <p>Japanese noodle soup, with a combination of a rich flavoured broth, one of a variety of types of noodle and a selection of meats</p>
+                        </div>
+                    </div>
+                    <div class="foodDiv goulash">
+                        <div class="cover">
+                            <h5>Hungarian Goulash</h5>
+                            <p>Hungarian beef dish is cooked with paprika, finished with sour cream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drink Window transparent">
+                    <div class="ImgDiv negroni">
+                        <img class="drinkImg" src="./images/negroni.jpg" alt="">
+                    </div>
+                    <div class="ImgDiv caipirinha">
+                        <img class="drinkImg" src="./images/caipirinha-cocktail.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="travel Window transparent">
+                    <div class="ImgDiv escondido" target="_blank">
+                        <a target="_blank" href="https://www.google.com/maps/place/Puerto+Escondido,+Oaxaca,+Mexico/@15.8749283,-97.0976379,14z/data=!3m1!4b1!4m6!3m5!1s0x85b8f7e977d3b93f:0x9184e1896f93a0a4!8m2!3d15.8719795!4d-97.0767365!16zL20vMDNtOHdj?entry=ttu">
+                            <img class="travelImg" src="./images/escondido.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="ImgDiv samui" >
+                        <a href="https://www.google.com/maps/place/Ko+Samui/@9.5010773,99.9190112,12z/data=!3m1!4b1!4m6!3m5!1s0x3054f1501c66266f:0xedd55abd3d7d8330!8m2!3d9.5120168!4d100.0135929!16zL20vMDMzY3N2?entry=ttu" target="_blank">
+                            <img class="travelImg" src="./images/samui.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="ImgDiv tokyo">
+                        <a target="_blank" class="tokyo2" href="https://www.google.com/maps/place/Tokyo,+Japan/@35.5074465,139.1104299,9z/data=!3m1!4b1!4m6!3m5!1s0x605d1b87f02e57e7:0x2e01618b22571b89!8m2!3d35.6761919!4d139.6503106!16zL20vMDdkZms?entry=ttu">
+                            <img class="travelImg tokyo3" src="./images/tokyo.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </container>

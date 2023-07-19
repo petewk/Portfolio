@@ -66,6 +66,7 @@
     height: 120px;
     border-radius: 75px;
     margin: 20px;
+    box-shadow:1px 3px 6px 0px;
 }
 
 #bioSection {
@@ -73,28 +74,44 @@
     border-top: 2px solid rgb(109 64 64);
     border-bottom: 1px solid black;
     margin: 0 auto;
-    height: 450px;
+    height: 400px;
     text-align: center;
     padding: 40px 0px;
 }
 
 #bioHeader {
     width: 50%;
-    margin: 0 auto;
+    margin: 10px auto 20px auto;
     font-family: 'Dosis', sans-serif;
     color: #6e80ba
 }
 
 #bioText {
-    width: 50%;
-    float: left;
+    width: 80%;
+    margin: 0 auto;
     text-align: left;
+    font-family: 'Dosis';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#breweryLink {
+    color: #6d4040;
+    transition: .2s;
+}
+
+#breweryLink:hover {
+    color: #6e80ba;
+    transition: .2s;
 }
 
 #githubLogo {
     float:right;
-    width: 130px;
-    margin: 12px;
+    width: 120px;
+    margin: 20px;
+    border-radius: 50%;
+    box-shadow:1px 3px 6px 0px;
 }
 
 #workExamples {
@@ -103,8 +120,14 @@
 
 #workExamples h2 {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     width: 60%;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(109 64 64);
+}
+
+.fa-angles-down {
+    margin: 0px 30px;
 }
 
 .linkBody {
@@ -129,10 +152,44 @@
     margin-left: 20px;
 }
 
-#techList {
-    float: left;
+.bioList {
+    width: 47%;
+    display: inline-block;
+    height: 230px;
+    margin-top: 20px;
 }
 
+.bioList ul{
+    line-height: 1.5em;
+}
+
+.right {
+    float: right;
+    text-align: left;
+    border-left: 2px solid rgb(109 64 64);
+    padding-left: 15px;
+}
+
+.right ul {
+    width: 75%;
+}
+
+
+.left {
+    float:left;
+    text-align: right;
+    border-right: 2px solid rgb(109 64 64);
+    padding-right: 15px;
+    
+}
+
+.left ul {
+    direction: rtl;
+}
+
+.left li {
+    background-position: 100%;
+}
 
 /* Poker Link Styling */
 
@@ -230,10 +287,12 @@
     margin: 0 auto;
     display: block;
     border: none;
-    background-color: #6e80ba61;
+    background-color: #6e80ba;
     height: 20px;
     position: relative;
-
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
 }
 
 .buttonBuffer {
@@ -251,4 +310,198 @@
 
 a {
     color: inherit;
+}
+
+#personal {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px solid rgb(109 64 64);
+}
+
+#personal {
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#personal h2 {
+    text-align: center;
+    margin: 30px auto;
+    width: 60%;
+    color: rgb(109 64 64);
+
+}
+
+
+.bioDetail {
+    color: #6d4040;
+    text-decoration: underline;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.bioDetail:hover {
+    color: #6e80ba;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+#detailsWindow {
+    border: 1px solid #6e80ba;
+    height: 200px;
+    position: relative;
+    padding: 10px;
+}
+
+.games {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.gamesImg {
+    width: 100px;
+    height: 100px;
+}
+
+.Window {
+    transition: 0.3s;
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+#default h3 {
+    position: relative;
+    top: 20px;
+    font-size: 1.8em;
+    color: #6d4040;
+}
+
+.transparent {
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -50;
+}
+
+.gone {
+    display: none;
+}
+
+.drink {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ImgDiv {
+    position: relative;
+}
+
+.drinkImg {
+    height: 200px;
+    width: 325px;
+}
+
+.negroni::after {
+    content: "Negroni";
+    color: white;
+    top: 25%;
+    right: 50px;
+    position: absolute;
+    font-family: 'Lugrasimo', cursive;
+}
+
+.caipirinha::after {
+    content: "Caipirinha";
+    color: white;
+    top: 25%;
+    right: 50px;
+    position: absolute;
+    font-family: 'Lugrasimo', cursive;
+}
+
+.travelImg {
+    width: 100%;
+    height: 180px;
+    max-width: 300px;
+}
+
+
+
+
+.ImgDiv::after {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transition: 0.2s;
+    position: absolute;
+    font-size: 2.7em;
+}
+
+.ImgDiv:hover:after {
+    color: #ffffff00;
+}
+
+.tokyo::after {
+    content: "TOKYO";
+    right: 20%;
+    top: 34%;
+}
+
+.escondido::after {
+    content: "PUERTO ESCONDIDO";
+    font-size: 2em;
+    right: 0%;
+    top: 28%;
+}
+
+.samui::after {
+    content: "KOH SAMUI";
+    right: 8%;
+    width: 80%;
+    top: 21%;
+}
+
+.food {
+    height: 100%;
+}
+
+.foodDiv {
+    width: 30%;
+    height: 90%;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.carbonara {
+    background-image: url(./images/carbonara.jpg);
+}
+
+.ramen {
+    background-image: url(./images/ramen.jpg);
+}
+
+.goulash {
+    background-image: url(./images/goulash.jpg)
+}
+
+.cover {
+    color: #ffffff00;
+    background-color: #ffffff00;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.cover h5 {
+    margin-top: 0px;
+}
+
+.cover:hover {
+    color: white;
+    background-color: #8080805c;
+    transition: 0.3s;
+
 }
