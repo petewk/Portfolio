@@ -115,12 +115,16 @@
 }
 
 #workExamples {
-    padding: 50px 0px 100px 0px;
+    padding: 50px 0px 80px 0px;
+}
+
+#toph2 {
+    margin: 0px auto 40px auto !important;
 }
 
 #workExamples h2 {
     text-align: center;
-    margin: 0 auto 40px auto;
+    margin: 40px auto 20px auto;
     width: 60%;
     font-family: 'Dosis', sans-serif;
     color: rgb(109 64 64);
@@ -135,8 +139,14 @@
     background-color: lightgrey;
     margin: 25px auto;
     height: 90px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     overflow: hidden;
+    transition: .5s
+}
+
+.linkBody:hover {
+    box-shadow: inset 2px 1px 7px black;
+    transition: .3s;
 }
 
 .pageTitle h3 {
@@ -251,7 +261,7 @@
     transition: 1s;
     transition-delay: .5s;
     background-color: lightgray;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     height: inherit;
     display: flex;
 }
@@ -293,6 +303,7 @@
     cursor: pointer;
     color: white;
     font-size: 1.2rem;
+    border-radius: 0 0 5px 5px;
 }
 
 .buttonBuffer {
@@ -339,6 +350,7 @@ a {
     text-decoration: underline;
     transition: .4s;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .bioDetail:hover {
@@ -352,6 +364,7 @@ a {
     height: 200px;
     position: relative;
     padding: 10px;
+    border-radius: 8px;
 }
 
 .games {
@@ -406,6 +419,7 @@ a {
 
 .ImgDiv {
     position: relative;
+    top: 5px;
 }
 
 .drinkImg {
@@ -418,6 +432,7 @@ a {
     width: 100%;
     height: 180px;
     max-width: 300px;
+    border-radius: 8px;
 }
 
 .caipirinha {
@@ -470,7 +485,10 @@ a {
     height: 90%;
     background-size: cover;
     background-position-y: center;
+    border-radius: 8px;
 }
+
+
 
 .carbonara {
     background-image: url(./images/carbonara.jpg);
