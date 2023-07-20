@@ -395,7 +395,14 @@ a {
 .drink {
     display: flex;
     justify-content: space-around;
+    height: 100%;
 }
+
+.cover ul {
+    padding-inline-start: 45%;
+    margin-inline-end: 40%;
+}
+
 
 .ImgDiv {
     position: relative;
@@ -406,23 +413,6 @@ a {
     width: 325px;
 }
 
-.negroni::after {
-    content: "Negroni";
-    color: white;
-    top: 25%;
-    right: 50px;
-    position: absolute;
-    font-family: 'Lugrasimo', cursive;
-}
-
-.caipirinha::after {
-    content: "Caipirinha";
-    color: white;
-    top: 25%;
-    right: 50px;
-    position: absolute;
-    font-family: 'Lugrasimo', cursive;
-}
 
 .travelImg {
     width: 100%;
@@ -430,7 +420,13 @@ a {
     max-width: 300px;
 }
 
+.caipirinha {
+    background-image: url(./images/caipirinha-cocktail.jpg)
+}
 
+.negroni {
+    background-image: url(./images/negroni.jpg);
+}
 
 
 .ImgDiv::after {
@@ -469,7 +465,7 @@ a {
     height: 100%;
 }
 
-.foodDiv {
+.foodDiv, .drinkDiv {
     width: 30%;
     height: 90%;
     background-size: cover;
@@ -497,11 +493,17 @@ a {
 
 .cover h5 {
     margin-top: 0px;
+    font-size: 1.3em;
+    padding-top: 15px;
+}
+
+.cover p {
+    width: 75%;
+    margin: 0 auto;
 }
 
 .cover:hover {
     color: white;
-    background-color: #8080805c;
+    background-color: #80808099;
     transition: 0.3s;
-
 }
