@@ -5,7 +5,8 @@
 
   body {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(110,128,186,1) 11%, rgb(109 64 64) 83%);
+    /* background: linear-gradient(135deg, #6e80ba 11%, #6d4040 83%); */
+    background-image: url(./images/blurry-gradient-haikei.svg);
     overflow: hidden;
   }
 
@@ -55,7 +56,7 @@
     text-align: center;
     padding: 50px 0px 30px 0px;
     margin: 10px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 700;
     color: #6e80ba;
     letter-spacing: 0.09rem;
@@ -65,7 +66,8 @@
     width: 120px;
     height: 120px;
     border-radius: 75px;
-    margin: 20px;
+    margin: 30px;
+    margin-left: 50px;
     box-shadow:1px 3px 6px 0px;
 }
 
@@ -109,7 +111,8 @@
 #githubLogo {
     float:right;
     width: 120px;
-    margin: 20px;
+    margin: 30px;
+    margin-right: 50px;
     border-radius: 50%;
     box-shadow:1px 3px 6px 0px;
 }
@@ -139,15 +142,10 @@
     background-color: lightgrey;
     margin: 25px auto;
     height: 90px;
-    border-radius: 5px 5px 0 0;
     overflow: hidden;
     transition: .5s
 }
 
-.linkBody:hover {
-    box-shadow: inset 2px 1px 7px black;
-    transition: .3s;
-}
 
 .pageTitle h3 {
     display: inline-block;
@@ -167,10 +165,12 @@
     display: inline-block;
     height: 230px;
     margin-top: 20px;
+    color: #6e80ba;
 }
 
 .bioList ul{
     line-height: 1.5em;
+    color: black;
 }
 
 .right {
@@ -260,10 +260,11 @@
     width: 0px;
     transition: 1s;
     transition-delay: .5s;
+    transition-timing-function: cubic-bezier(0.72, 1.39, 0.38, 0.95);
     background-color: lightgray;
-    border-radius: 5px 0 0 5px;
     height: inherit;
     display: flex;
+    position: relative;
 }
 
 .linkOuter:hover .logoSection {
@@ -273,6 +274,14 @@
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+    box-shadow: -4px -1px 17px 3px black;
+    transition-timing-function: cubic-bezier(0.72, 1.39, 0.38, 0.95);
+}
+
+.linkOuter:hover .fa-solid {
+    opacity: 0;
+    transition: .3s;
+    
 }
 
 .langLogo {
@@ -280,6 +289,32 @@
     display: inline;
     height: 50px;
     padding-top: 15px;
+}
+
+.pokerLogos .fa-solid {
+    color: gold;
+}
+
+.pokerLogos {
+    border-left: 5px solid gold;
+}
+
+.boatLogos {
+    border-left: 5px solid #a58d6f;
+    position: relative;
+}
+
+.logoSection .fa-solid {
+    position: absolute;
+    left: -45px;
+    font-size: xx-large;
+    top: 27px;
+}
+
+
+
+.droneLogos {
+    border-left: 5px solid #3f6163;
 }
 
 .exampleFrame {
@@ -327,6 +362,7 @@ a {
     width: 90%;
     margin: 0 auto;
     border-top: 2px solid rgb(109 64 64);
+    border-bottom: 2px solid rgb(109 64 64);
 }
 
 #personal {
@@ -360,7 +396,6 @@ a {
 }
 
 #detailsWindow {
-    border: 1px solid #6e80ba;
     height: 200px;
     position: relative;
     padding: 10px;
@@ -370,7 +405,7 @@ a {
 .games {
     display: flex;
     justify-content: space-around;
-    height: 100%;
+    height: -webkit-fill-available;
     align-content: center;
     flex-wrap: wrap;
 }
@@ -397,7 +432,7 @@ a {
 
 .transparent {
     opacity: 0;
-    transition: 0.3s;
+    transition: 5s;
     z-index: -50;
 }
 
@@ -408,7 +443,7 @@ a {
 .drink {
     display: flex;
     justify-content: space-around;
-    height: 100%;
+    height: -webkit-fill-available;
 }
 
 .cover ul {
