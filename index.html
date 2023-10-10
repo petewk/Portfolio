@@ -5,145 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d72bd5e58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./carousel.css">
     <title>PK Code</title>
 </head>
 <body>
-    <container id="fullBody">   
         <div id="headerBox"> 
-            <img id="portrait" src="./images/portait.png">
-            <h1 id="mainTitle">Pete Kerr <br />My Portfolio</h1>
+            <h1 id="mainTitle">Pete Kerr  -  My Portfolio</h1>
 
+            <a class="navLink" href="#">Top</a> &middot;
+            <a class="navLink" href="#workExamplesScroll">My Work</a> &middot;
+            <a class="navLink" href="#bioSectionScroll">About Me</a>
+
+            <img id="portrait" class="headerImg" src="./images/portait.png">
+            
             <a href="https://github.com/petewk" target="_blank">
-               <img id="githubLogo"  src="./images/1024px-Github-desktop-logo-symbol.svg.png" alt="">
+             <img id="githubLogo" class="headerImg"  src="./images/gitHubBW.png" alt="">
             </a>
+        </div>
+
+
+
+        <div id="taglineSpace">
+            <div id="bioTextTop">An aspiring developer looking to make the move into my first professional position after spending my spare time teaching myself mainly Front-end technologies through online resources.</div>
+            <br />
+        </div>
+
+
+        <span id="workExamplesScroll"></span>
+            <div id="workExamples" class="container">
+                
+
+                <div id="myCarousel" class="carousel slide" data-ride="false" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div id="boatSlide" class="item active">
+                        <span class="slideHeaders">
+                            <a class="siteLinks" href="https://boat-wiki.herokuapp.com/" target="_blank">Wikipe-Dea</a>
+                            <span class="slideTechLogos">
+                                <img src="./images/react.png" alt="" class="slidelangLogo">
+                                <img src="./images/node.png" alt="" class="slidelangLogo">
+                                <img src="./images/mysql.png" alt="" class="slidelangLogo">
+                                <img src="./images/css.png" alt="" class="slidelangLogo">
+                                <img src="./images/Amazon-S3-Logo.svg.png" class="slidelangLogo" alt="">
+                                <a href="https://github.com/petewk/react-boat-info" target="_blank">
+                                <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="slidelangLogo" href="https://github.com/petewk/new-poker-timer">                            
+                                </a>
+                            </span>
+                        </span>
+                        <div class="iFrameContainer">
+                            <iframe class="iframeSlide" src="https://boat-wiki.herokuapp.com/"></iframe>
+                            <div class="descriptionWindow">
+                                Desriptions going here
+                                <ul>
+                                    <li>Description1</li>
+                                    <li>Description2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="pokerSlide" class="item">
+                        <span class="slideHeaders">
+                            <a class="siteLinks" href="https://poker-timer-7367af045710.herokuapp.com/" target="_blank">Poker Timer</a>
+                            <span class="slideTechLogos">
+                                <img src="./images/react.png" alt="" class="slidelangLogo">
+                                <img src="./images/css.png" alt="" class="slidelangLogo">
+                                <a href="https://github.com/petewk/new-poker-timer" target="_blank">
+                                    <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="slidelangLogo" href="https://github.com/petewk/new-poker-timer">                            
+                                </a>
+                            </span>
+                        </span>
+                        <div class="iFrameContainer">
+                            <iframe class="iframeSlide" src="https://poker-timer-7367af045710.herokuapp.com/"></iframe>
+                            <div class="descriptionWindow">
+                                Desriptions going here
+                                <ul>
+                                    <li>Description1</li>
+                                    <li>Description2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="droneSlide" class="item">
+                        <span class="slideHeaders">
+                            <a class="siteLinks" href="https://stevsite.netlify.app/" target="_blank">Photography Page</a>
+                            <span class="slideTechLogos">
+                                <img src="./images/html.png" alt="" class="slidelangLogo">
+                                <img src="./images/javascript.png" alt="" class="slidelangLogo">
+                                <img src="./images/css.png" alt="" class="slidelangLogo">
+                                <a href="https://github.com/petewk/react-boat-info" target="_blank">
+                                    <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="slidelangLogo" href="https://github.com/petewk/new-poker-timer">                            
+                                </a>
+                            </span>
+                        </span>
+                        <div class="iFrameContainer">
+                            <iframe class="iframeSlide" src="https://stevsite.netlify.app/"></iframe>
+                            <div class="descriptionWindow">
+                                Desriptions going here
+                                <ul>
+                                    <li>Description1</li>
+                                    <li>Description2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                </div>
+
+
         </div>
         
-
+        <span id="bioSectionScroll"></span>
         <div id="bioSection">
-            <h2 id="bioHeader">A bit about me</h2>
-            <div id="bioText">
 
-                I'm an aspiring front-end/full stack web developer, and have spent my free time teaching myself through online materials, mainly from Udemy.com and specifically Dr. Angela Yu of <a id="breweryLink" href="https://appbrewery.com/" target="_blank">The App Brewery</a>, whose course has taught me the most and kept me encouraged in my progress <br />
-                I was drawn in by the potential do something creative, and fell in love with the problem solving aspect and the catharsis of getting a project working after it's been puzzling you. <br />
-                <br />
-                <div class="bioList left">
-                    So far, I have worked with: <br />
-                        <ul class="techList">
-                            <li>HTML</li>
-                            <li>JS</li>
-                            <li>jQuery</li>
-                            <li>CSS</li>
-                            <li>React</li>
-                            <li>Bootstrap</li>
-                            <li>Node.js</li>
-                            <li>MySQL</li>
-                        </ul>
-                </div>
+            <div class="lookingFor" id="aboutMe">
+                I am hoping to find: <br />
+                <ul>
+                    <li>New challenges to push me to test my abilities</li>
+                    <li>A supportive and understanding environment to develop my skills</li>
+                    <li>A greater understanding of industry standard and methods of working</li>
+                    <li>Exposure and the chance to work with and learn new technologies </li>
+                </ul>
+            </div>
+            
+            <div class="technologies">
+                <!-- HTML JS JQUERY CSS REACT BOOTSTRAP NODE MYSQL S3 -->
+                <img src="./images/html.png" class="techImg" alt="">
+                <img src="./images/javascript.png" class="techImg" alt="">
+                <img src="./images/jquery.png" class="techImg" alt="">
+                <img src="./images/css.png" class="techImg" alt="">
+                <img src="./images/react.png" class="techImg" alt="">
+                <img src="./images/Bootstrap_logo.svg.png" class="techImg" alt="">
+                <img src="./images/node.png" class="techImg" alt="">
+                <img src="./images/mysql.png" class="techImg" alt="">
+                <img src="./images/Amazon-S3-Logo.svg.png" class="techImg" alt="">
 
-                <div class="bioList right">
-                    I am looking for: <br />
-                        <ul class="techList">
-                            <li>A supportive and understanding environment to develop my skills</li>
-                            <li>New challenges to push me to test my abilities</li>
-                            <li>A forward looking company where I can gain context and understanding of new and upcoming technologies</li>
-                        </ul>
-                    </div>
-                </div>
+            </div>
                 
-                
-            </a>
 
             
-        </div>
-        <div id="workExamples">
-            <h2 id="toph2"> <i class="fa-solid fa-angles-down"></i>Here's some of my work<i class="fa-solid fa-angles-down"></i></h2>
-
-
-            <section>
-                <div class="linkOuter">
-                    <div class="linkBody" id="Poker">
-                        <a href="https://poker-timer-7367af045710.herokuapp.com/" target="_blank">
-                            <div class="pageTitle">
-                                <h3>Poker Blind Timer</h3>
-                                <p>Clock for setting Poker Game Times</p>
-                            </div>
-                        </a>
-                        <div class="logoSection pokerLogos">
-                            <i class="fa-solid fa-angles-left"></i>
-                            <img src="./images/react.png" alt="" class="langLogo">
-                            <img src="./images/css.png" alt="" class="langLogo">
-                            <a href="https://github.com/petewk/new-poker-timer" target="_blank">
-                                <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="langLogo" href="https://github.com/petewk/new-poker-timer">                            
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-                <iframe class="exampleFrame hidden" src="https://poker-timer-7367af045710.herokuapp.com/">
-
-                </iframe>
-                <button class="iframeButton buttonBuffer" onclick="expandSample()"><i class="fa-solid fa-caret-down"></i></button>
-                
-
-                <div  class="linkOuter">
-                   <div class="linkBody" id="Boat">
-                    <a href="https://boat-wiki.herokuapp.com/" target="_blank">
-                        <div class="pageTitle">
-                            <h3>Boat Info Wiki</h3>
-                            <p>Wiki style page with Rich Text Editor</p>
-                        </div>
-                    </a>
-                    <div class="logoSection boatLogos">
-                        <i class="fa-solid fa-angles-left"></i>
-                        <img src="./images/react.png" alt="" class="langLogo">
-                        <img src="./images/node.png" alt="" class="langLogo">
-                        <img src="./images/mysql.png" alt="" class="langLogo">
-                        <img src="./images/css.png" alt="" class="langLogo">
-                        <a href="https://github.com/petewk/react-boat-info" target="_blank">
-                            <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="langLogo" href="https://github.com/petewk/new-poker-timer">                            
-                        </a>
-                    </div>
-                   </div>
-                </div>
-                <iframe class="exampleFrame hidden" src="https://boat-wiki.herokuapp.com/">
-
-                </iframe>
-                <button class="iframeButton buttonBuffer" onclick="expandSample()"><i class="fa-solid fa-caret-down "></i></button>
-
-
-                <div  class="linkOuter">
-                   <div class="linkBody" id="Drone">
-                    <a href="https://stevsite.netlify.app/" target="_blank">
-                        <div class="pageTitle">
-                            <h3>Photography Company Website</h3>
-                            <p>Commercial Site for small Photography company</p>
-                        </div>
-                    </a>
-                    <div class="logoSection droneLogos">
-                        <i class="fa-solid fa-angles-left"></i>
-                        <img src="./images/html.png" alt="" class="langLogo">
-                        <img src="./images/javascript.png" alt="" class="langLogo">
-                        <img src="./images/css.png" alt="" class="langLogo">
-                        <a href="https://github.com/petewk/react-boat-info" target="_blank">
-                            <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="langLogo" href="https://github.com/petewk/new-poker-timer">                            
-                        </a>
-                    </div>
-                   </div>
-                </div>
-                <iframe class="exampleFrame hidden" src="https://stevsite.netlify.app/">
-
-                </iframe>
-                <button class="iframeButton buttonBuffer" onclick="expandSample()"><i class="fa-solid fa-caret-down"></i></button>
-
-            </section>
-
-            <h2>More to come, watch this space...</h2>
         </div>
 
         <div id="personal">

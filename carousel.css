@@ -1,0 +1,89 @@
+:root{
+    --deepGrey: #353232;
+}
+
+.carousel-indicators li{
+    color: black;
+    background-color: black;
+}
+
+.carousel-indicators .active {
+    background-color: white !important;
+}
+
+.carousel-indicators li {
+    margin: 0px 35px !important;
+}
+
+#myCarousel {
+    height: inherit;
+    background-color: var(--deepGrey)
+}
+
+.carousel-inner, .item {
+    height: inherit;
+}
+
+.iframeSlide {
+    height: 92%;
+    width: 90%;
+    aspect-ratio: 1.78;
+}
+
+.carousel-control {
+    height: 7%;
+    width: 75px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideHeaders {
+    height: 7%;
+    width: calc(100% - 150px);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.siteLinks {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0px 100px;
+    color: white;
+    transition: 0.3s;
+}
+
+.slideTechLogos {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+iframe {
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+    width: 1600px;
+}
+
+iframe {
+    background-color: white;
+}
+
+.descriptionWindow {
+    color: white;
+    width: 15%;
+    position: relative;
+    left: -10%;
+    padding-top: 40px;
+    
+}
