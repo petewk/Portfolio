@@ -3,7 +3,8 @@
 }
 
 :root{
-    --deepGrey: #353232;
+    --deepGrey: ##555151;
+    --midBlue: #638897;
 }
 
 body {
@@ -98,6 +99,7 @@ a, a:hover, a:active, a:focus {
     margin: 0 auto 0 80px;
     letter-spacing: 0.1rem;
     font-size: 30px;
+    font-weight: 600;
 }
 
 .navLink {
@@ -111,7 +113,7 @@ a, a:hover, a:active, a:focus {
 
 #bioSection {
     margin-top: 110px;
-    height: calc(100vh - 80px)
+    height: calc(100vh - 200px)
 }
 
 
@@ -221,3 +223,59 @@ a, a:hover, a:active, a:focus {
     aspect-ratio: 1;
 }
 
+#personal {
+    width: 100%;
+    background-color: var(--deepGrey);
+    height: 35vh;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 700;
+}
+
+.bioFocusItem {
+    color: var(--midBlue);
+
+}
+
+#focusItemImages {
+    width: 60vw;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.imagesContainer {
+    display: flex;
+    width: 60vw;
+    margin: 25px auto;
+    justify-content: space-around;
+    transition: .4s;
+    opacity: 0;
+    position: absolute;
+}
+
+.shown {
+    opacity: 1;
+    transition: .4s
+}
+
+.gameImg {
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.drinkImg, .foodImg {
+    width: 200px;
+    aspect-ratio: 1.2;
+}
+
+#bottomInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+}

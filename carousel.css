@@ -1,10 +1,10 @@
 :root{
-    --deepGrey: #353232;
+    --deepGrey: #555151;
 }
 
 .carousel-indicators li{
-    color: #353232;
-    background-color: #353232;
+    color: #555151;
+    background-color: #555151;
 }
 
 .carousel-indicators .active {
@@ -12,6 +12,7 @@
     transition: .3s;
     position: relative;
     bottom: 2px;
+    box-shadow: 4px 4px 9px 5px;;
 }
 
 .carousel-indicators li {
@@ -113,12 +114,18 @@ iframe {
     
 }
 
+.descriptionWindow ul {
+    padding-left: 10px;
+    line-height: 2.2rem;
+}
+
+
 .carousel-control.right {
-    background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgb(53 50 50) 100%);
+    background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgb(85 81 81) 100%);;
 }
 
 .carousel-control.left {
-    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(53 50 50) 100%);
+    background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(85 81 81) 100%);;
 }
 
 .fa-arrow-right, .fa-arrow-left {
