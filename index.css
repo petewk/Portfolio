@@ -17,6 +17,11 @@ body {
     background-color: blue;
 }
 
+a, a:hover, a:active, a:focus {
+    transition: .3s;
+    text-decoration: none !important;
+}
+
 
 #headerBox {
     position: fixed;
@@ -28,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     z-index: 100;
+    border-bottom: 2px solid #638897;
 }
 
 #headerBox a {
@@ -49,17 +55,47 @@ body {
 }
 
 #taglineSpace {
-    margin: 50px auto;
     display: flex;
     height: 25vh;
     align-items: center;
-    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+
+.bioBlocks {
+    justify-content: center;
+    text-align: center;
+    display: inline;
+}
+
+#bioText {
+    flex-basis: 60%;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 0px 35px;
+}
+
+.bioItem, .bioItem a {
+    line-height: 2.2em;
+    font-size: 1.7rem;
+    color: #638897;
+}
+
+.bioItem i {
+    margin: 0px 15px;
+    color: black;
+}
+
+#contactInfo {
+    flex-basis: 30%;
 }
 
 #mainTitle {
     color: white;
     display: inline;
-    margin: 0 auto 0 40px;
+    margin: 0 auto 0 80px;
     letter-spacing: 0.1rem;
     font-size: 30px;
 }
@@ -74,21 +110,11 @@ body {
 
 
 #bioSection {
-    margin-top: 90px;
+    margin-top: 110px;
     height: calc(100vh - 80px)
 }
 
-#bioText {
-    padding-top: 50px;
-}
 
-#bioTextTop {
-    text-align: center;
-    font-size: 1.3em;
-    width: 75%;
-    margin: 50px auto;
-    font-weight: 600;
-}
 
 .technologies {
     display: flex;
@@ -108,15 +134,18 @@ body {
 .lookingFor {
     margin: 0px auto 50px auto;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 50px;
     border-top: 3px solid var(--deepGrey);
     border-bottom: 3px solid var(--deepGrey);
     width: 80vw;
+    font-weight: 600;
+    line-height: 2.2;
 }
 
 .lookingFor ul {
     list-style-position: inside;
+    font-size: 0.8em;
 }
 
 
@@ -168,7 +197,7 @@ body {
 
 .iFrameContainer {
     display: flex;
-    padding: 50px 50px 0px 50px;
+    padding: 30px 0px 50px 50px;
 }
 
 .linkOuter {

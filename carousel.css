@@ -3,16 +3,21 @@
 }
 
 .carousel-indicators li{
-    color: black;
-    background-color: black;
+    color: #353232;
+    background-color: #353232;
 }
 
 .carousel-indicators .active {
     background-color: white !important;
+    transition: .3s;
+    position: relative;
+    bottom: 2px;
 }
 
 .carousel-indicators li {
     margin: 0px 35px !important;
+    width: 50px !important;
+    transition: .3s;
 }
 
 #myCarousel {
@@ -33,11 +38,19 @@
 .carousel-control {
     height: 7%;
     width: 75px;
-    background-color: black;
+    background-color: #636363;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.carousel-control:hover {
+    background-color: #30515e;
+}
+
+.carousel-indicators {
+    bottom: 2px !important;
 }
 
 .slideHeaders {
@@ -56,6 +69,14 @@
     margin: 0px 100px;
     color: white;
     transition: 0.3s;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.siteLinks i {
+    margin: 0px 5px;
+    font-size: 0.6em;
+    vertical-align: text-top;
 }
 
 .slideTechLogos {
@@ -70,9 +91,13 @@ iframe {
     -moz-transform-origin: 0 0;
     -o-transform: scale(0.75);
     -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.75);
+    -webkit-transform: scale(0.8);
     -webkit-transform-origin: 0 0;
     width: 1600px;
+}
+
+.iFrameContainer {
+    background-color: #638897;
 }
 
 iframe {
@@ -86,4 +111,16 @@ iframe {
     left: -10%;
     padding-top: 40px;
     
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgb(53 50 50) 100%);
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgb(53 50 50) 100%);
+}
+
+.fa-arrow-right, .fa-arrow-left {
+    color: #0dcaf0;
 }

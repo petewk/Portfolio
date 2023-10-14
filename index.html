@@ -16,7 +16,7 @@
 </head>
 <body>
         <div id="headerBox"> 
-            <h1 id="mainTitle">Pete Kerr  -  My Portfolio</h1>
+            <h1 id="mainTitle">Pete Kerr  -  Portfolio</h1>
 
             <a class="navLink" href="#">Top</a> &middot;
             <a class="navLink" href="#workExamplesScroll">My Work</a> &middot;
@@ -32,8 +32,16 @@
 
 
         <div id="taglineSpace">
-            <div id="bioTextTop">An aspiring developer looking to make the move into my first professional position after spending my spare time teaching myself mainly Front-end technologies through online resources.</div>
-            <br />
+            <div class="bioBlocks" id="bioText">An aspiring developer looking to make the move into my first professional position after spending my spare time teaching myself mainly Front-end technologies through online resources.</div>
+            <div class="bioBlocks" id="contactInfo">
+                <b class="bioItem">
+                    <i class="fa-brands fa-github"></i> <a href="https://github.com/petewk" target="_blank">github.com/petewk</a>
+                </b> <br>
+                <b class="bioItem">
+                    <i class="fa-solid fa-at"></i> petewk1991@gmail.com
+                </b>
+                
+            </div>
         </div>
 
 
@@ -53,12 +61,12 @@
                 <div class="carousel-inner">
                     <div id="boatSlide" class="item active">
                         <span class="slideHeaders">
-                            <a class="siteLinks" href="https://boat-wiki.herokuapp.com/" target="_blank">Wikipe-Dea</a>
+                            <a class="siteLinks" href="https://boat-wiki.herokuapp.com/" target="_blank">Wikipe-Dea <i class="fa-solid fa-up-right-from-square"></i></a>
                             <span class="slideTechLogos">
                                 <img src="./images/react.png" alt="" class="slidelangLogo">
                                 <img src="./images/node.png" alt="" class="slidelangLogo">
                                 <img src="./images/mysql.png" alt="" class="slidelangLogo">
-                                <img src="./images/css.png" alt="" class="slidelangLogo">
+                                <img src="./images/css.svg" alt="" class="slidelangLogo">
                                 <img src="./images/Amazon-S3-Logo.svg.png" class="slidelangLogo" alt="">
                                 <a href="https://github.com/petewk/react-boat-info" target="_blank">
                                 <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="slidelangLogo" href="https://github.com/petewk/new-poker-timer">                            
@@ -68,10 +76,15 @@
                         <div class="iFrameContainer">
                             <iframe class="iframeSlide" src="https://boat-wiki.herokuapp.com/"></iframe>
                             <div class="descriptionWindow">
-                                Desriptions going here
+                                <h2>Wikipe-Dea</h2>
+                                <h4>Wikipedia style page for uploading and sharing information</h4>
                                 <ul>
-                                    <li>Description1</li>
-                                    <li>Description2</li>
+                                    <li>React Front-end</li>
+                                    <li>Express Back-end</li>
+                                    <li>Amazon S3 for permanent storage</li>
+                                    <li>MYSQL Database for recording recent updates and users</li>
+                                    <li>Rich text editor for creating new pages</li>
+                                    <li>React Rendering of PDFs</li>
                                 </ul>
                             </div>
                         </div>
@@ -79,10 +92,10 @@
                 
                     <div id="pokerSlide" class="item">
                         <span class="slideHeaders">
-                            <a class="siteLinks" href="https://poker-timer-7367af045710.herokuapp.com/" target="_blank">Poker Timer</a>
+                            <a class="siteLinks" href="https://poker-timer-7367af045710.herokuapp.com/" target="_blank">Poker Timer <i class="fa-solid fa-up-right-from-square"></i></a>
                             <span class="slideTechLogos">
                                 <img src="./images/react.png" alt="" class="slidelangLogo">
-                                <img src="./images/css.png" alt="" class="slidelangLogo">
+                                <img src="./images/css.svg" alt="" class="slidelangLogo">
                                 <a href="https://github.com/petewk/new-poker-timer" target="_blank">
                                     <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="slidelangLogo" href="https://github.com/petewk/new-poker-timer">                            
                                 </a>
@@ -91,22 +104,21 @@
                         <div class="iFrameContainer">
                             <iframe class="iframeSlide" src="https://poker-timer-7367af045710.herokuapp.com/"></iframe>
                             <div class="descriptionWindow">
-                                Desriptions going here
-                                <ul>
-                                    <li>Description1</li>
-                                    <li>Description2</li>
-                                </ul>
+                                <h2>Poker Round Timer</h2>
+                                <h4>
+                                    Stopwatch/Timer style website using React Functional Components and Hooks
+                                </h4>
                             </div>
                         </div>
                     </div>
                 
                     <div id="droneSlide" class="item">
                         <span class="slideHeaders">
-                            <a class="siteLinks" href="https://stevsite.netlify.app/" target="_blank">Photography Page</a>
+                            <a class="siteLinks" href="https://stevsite.netlify.app/" target="_blank">Photography Page <i class="fa-solid fa-up-right-from-square"></i></a>
                             <span class="slideTechLogos">
                                 <img src="./images/html.png" alt="" class="slidelangLogo">
                                 <img src="./images/javascript.png" alt="" class="slidelangLogo">
-                                <img src="./images/css.png" alt="" class="slidelangLogo">
+                                <img src="./images/css.svg" alt="" class="slidelangLogo">
                                 <a href="https://github.com/petewk/react-boat-info" target="_blank">
                                     <img src="./images/1024px-Github-desktop-logo-symbol.svg.png" class="slidelangLogo" href="https://github.com/petewk/new-poker-timer">                            
                                 </a>
@@ -141,7 +153,7 @@
         <div id="bioSection">
 
             <div class="lookingFor" id="aboutMe">
-                I am hoping to find: <br />
+                I'm looking for: <br />
                 <ul>
                     <li>New challenges to push me to test my abilities</li>
                     <li>A supportive and understanding environment to develop my skills</li>
@@ -152,13 +164,13 @@
             
             <div class="technologies">
                 <!-- HTML JS JQUERY CSS REACT BOOTSTRAP NODE MYSQL S3 -->
-                <img src="./images/html.png" class="techImg" alt="">
+                <img src="./images/HTML5_Logo.svg" class="techImg" alt="">
                 <img src="./images/javascript.png" class="techImg" alt="">
-                <img src="./images/jquery.png" class="techImg" alt="">
-                <img src="./images/css.png" class="techImg" alt="">
+                <img src="./images/css.svg" class="techImg" alt="">
                 <img src="./images/react.png" class="techImg" alt="">
-                <img src="./images/Bootstrap_logo.svg.png" class="techImg" alt="">
                 <img src="./images/node.png" class="techImg" alt="">
+                <img src="./images/jquery.png" class="techImg" alt="">
+                <img src="./images/Bootstrap_logo.svg.png" class="techImg" alt="">
                 <img src="./images/mysql.png" class="techImg" alt="">
                 <img src="./images/Amazon-S3-Logo.svg.png" class="techImg" alt="">
 
