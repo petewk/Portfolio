@@ -3,7 +3,7 @@
 }
 
 :root{
-    --deepGrey: ##555151;
+    --deepGrey: #454040;
     --midBlue: #638897;
 }
 
@@ -21,6 +21,7 @@ body {
 a, a:hover, a:active, a:focus {
     transition: .3s;
     text-decoration: none !important;
+
 }
 
 
@@ -145,6 +146,12 @@ a, a:hover, a:active, a:focus {
     line-height: 2.2;
 }
 
+.lookingFor h3 {
+    margin: 0px auto 25px auto;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
 .lookingFor ul {
     list-style-position: inside;
     font-size: 0.8em;
@@ -233,9 +240,15 @@ a, a:hover, a:active, a:focus {
     font-weight: 700;
 }
 
+#personal h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
 .bioFocusItem {
     color: var(--midBlue);
-
+    font-size: 1.1em;
 }
 
 #focusItemImages {
@@ -269,6 +282,7 @@ a, a:hover, a:active, a:focus {
 .drinkImg, .foodImg {
     width: 200px;
     aspect-ratio: 1.2;
+    border-radius: 10px;
 }
 
 #bottomInfo {
@@ -277,5 +291,5 @@ a, a:hover, a:active, a:focus {
     justify-content: space-evenly;
     font-weight: 600;
     font-size: 15px;
-    margin-bottom: 10px;
+    margin: 10px auto 20px auto;
 }
