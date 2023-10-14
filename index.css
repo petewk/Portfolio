@@ -1,295 +1,562 @@
-*, html {
-    scroll-behavior: smooth !important;
-}
+@font-face {
+    font-family: "Card";
+    src: local("CARDC"), url("./fonts/CARDC.TTF") format("truetype");
+  }
 
-:root{
-    --deepGrey: #454040;
-    --midBlue: #638897;
-}
+  body {
+    height: 100vh;
+    /* background: linear-gradient(135deg, #6e80ba 11%, #6d4040 83%); */
+    background-image: url(./images/blurry-gradient-haikei.svg);
+    overflow: hidden;
+  }
 
-body {
-    margin: 0px !important;
-    padding-top: 80px;
-    font-family: 'Titillium Web', sans-serif;
-}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(110,128,186,1);
+    border-radius: 5px;
+    transition: .2s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(65, 85, 153);
+    transition: .2s;
+  }
+
 
 #fullBody {
-    width: 100vw;
-    background-color: blue;
+    width: 75%;
+    margin:0 auto;
+    justify-content: center;
+    display: block;
+    height: 90vh;
+    overflow: auto;
+    margin-top: 5vh;
+    background-color: white;
 }
-
-a, a:hover, a:active, a:focus {
-    transition: .3s;
-    text-decoration: none !important;
-
-}
-
 
 #headerBox {
-    position: fixed;
-    top: 0px;
-    background-color: var(--deepGrey);
-    width: 100vw;
-    height: 80px;
-    justify-content: flex-end;
     display: flex;
-    align-items: center;
-    z-index: 100;
-    border-bottom: 2px solid #638897;
-}
-
-#headerBox a {
-    margin-right: 20px;
-}
-
-
-
-.headerImg {
-    height: 70px;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    margin: 0px 20px;
-}
-
-#githubLogo {
-    background-color: white;
-    margin-right: 40px !important;
-}
-
-#taglineSpace {
-    display: flex;
-    height: 25vh;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 50px 0px;
-}
-
-
-.bioBlocks {
-    justify-content: center;
-    text-align: center;
-    display: inline;
-}
-
-#bioText {
-    flex-basis: 60%;
-    font-size: 1.3em;
-    font-weight: 600;
-    padding: 0px 35px;
-}
-
-.bioItem, .bioItem a {
-    line-height: 2.2em;
-    font-size: 1.7rem;
-    color: #638897;
-}
-
-.bioItem i {
-    margin: 0px 15px;
-    color: black;
-}
-
-#contactInfo {
-    flex-basis: 30%;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 #mainTitle {
-    color: white;
-    display: inline;
-    margin: 0 auto 0 80px;
-    letter-spacing: 0.1rem;
-    font-size: 30px;
-    font-weight: 600;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+    margin: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    color: #6e80ba;
+    letter-spacing: 0.09rem;
 }
 
-.navLink {
-    text-decoration: none;
-    color: white;
-    font-weight:600;
-    letter-spacing: .25em;
-    scroll-behavior: smooth !important;
+#portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 75px;
+    margin: 30px;
+    margin-left: 50px;
+    box-shadow:1px 3px 6px 0px;
 }
-
 
 #bioSection {
-    margin-top: 110px;
-    height: calc(100vh - 200px)
-}
-
-
-
-.technologies {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 80vw;
+    width: 90%;
+    border-top: 2px solid rgb(109 64 64);
+    border-bottom: 1px solid black;
     margin: 0 auto;
-    padding: 25px 100px 75px 100px;
-    border-bottom: 3px solid var(--deepGrey);
-}
-
-.techImg {
-    width: 75px;
-    aspect-ratio: 1;
-}
-
-.lookingFor {
-    margin: 0px auto 50px auto;
+    height: 400px;
     text-align: center;
-    font-size: 1.5em;
-    padding: 50px;
-    border-top: 3px solid var(--deepGrey);
-    border-bottom: 3px solid var(--deepGrey);
-    width: 80vw;
+    padding: 40px 0px;
+}
+
+#bioHeader {
+    width: 50%;
+    margin: 10px auto 20px auto;
+    font-family: 'Dosis', sans-serif;
+    color: #6e80ba
+}
+
+#bioText {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Dosis';
     font-weight: 600;
-    line-height: 2.2;
+    text-align: center;
+    line-height: 1.2;
 }
 
-.lookingFor h3 {
-    margin: 0px auto 25px auto;
-    font-weight: 700;
-    font-size: 1.2em;
+#breweryLink {
+    color: #6d4040;
+    transition: .2s;
 }
 
-.lookingFor ul {
-    list-style-position: inside;
-    font-size: 0.8em;
+#breweryLink:hover {
+    color: #6e80ba;
+    transition: .2s;
 }
 
-
-.sectionScroll {
-    scroll-behavior: smooth;
-}
-
-
-#workExamplesScroll, #bioSectionScroll {
-    height: 79px;
-    display: block;
-}
-
-#examplesContainer {
-    width: 100%;
-    height: 95vh;
-    display: flex;
+#githubLogo {
+    float:right;
+    width: 120px;
+    margin: 30px;
+    margin-right: 50px;
+    border-radius: 50%;
+    box-shadow:1px 3px 6px 0px;
 }
 
 #workExamples {
-    height: calc(100vh - 85px);
-    border: 2px solid var(--deepGrey);
-    padding: 0px;
-    height: 840px !important;
-    width: 100%;
+    padding: 50px 0px 80px 0px;
 }
 
-
-#carouselSectionBox {
-    width: 95vw;
-    height: 85vh;
-    border: 3px solid var(--deepGrey);
-    margin: 0 auto;
+#toph2 {
+    margin: 0px auto 40px auto !important;
 }
 
-.slideHeaders {
-    background-color: var(--deepGrey)
-}
-
-.iframeSlide {
-    width: inherit;
-}
-
-.slidelangLogo {
-    height: 40px;
-    aspect-ratio: 1;
-}
-
-
-.iFrameContainer {
-    display: flex;
-    padding: 30px 0px 50px 50px;
-}
-
-.linkOuter {
-    border: 4px solid red;
-    margin: 40px;
-}
-
-
-.langLogo {
-    width: 75px;
-    aspect-ratio: 1;
-}
-
-.gamesImg {
-    width: 75px;
-    aspect-ratio: 1;
-}
-
-.travelImg {
-    width: 100px;
-    aspect-ratio: 1;
-}
-
-#personal {
-    width: 100%;
-    background-color: var(--deepGrey);
-    height: 35vh;
-    color: white;
+#workExamples h2 {
     text-align: center;
-    padding-top: 25px;
-    font-weight: 700;
+    margin: 40px auto 20px auto;
+    width: 60%;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(109 64 64);
 }
 
-#personal h2 {
-    margin-bottom: 20px;
+.fa-angles-down {
+    margin: 0px 30px;
+}
+
+.linkBody {
+    width: 95%;
+    background-color: lightgrey;
+    margin: 25px auto;
+    height: 90px;
+    overflow: hidden;
+    transition: .5s
+}
+
+
+.pageTitle h3 {
+    display: inline-block;
+    margin: 20px 0 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pageTitle p {
+    display: inline-block;
+    height: inherit;
+    margin-left: 20px;
+}
+
+.bioList {
+    width: 47%;
+    display: inline-block;
+    height: 230px;
+    margin-top: 20px;
+    color: #6e80ba;
+}
+
+.bioList ul{
+    line-height: 1.5em;
+    color: black;
+}
+
+.right {
+    float: right;
+    text-align: left;
+    border-left: 2px solid rgb(109 64 64);
+    padding-left: 15px;
+}
+
+.right ul {
+    width: 75%;
+}
+
+
+.left {
+    float:left;
+    text-align: right;
+    border-right: 2px solid rgb(109 64 64);
+    padding-right: 15px;
+    
+}
+
+.left ul {
+    direction: rtl;
+}
+
+.left li {
+    background-position: 100%;
+}
+
+/* Poker Link Styling */
+
+#Poker {
+    background-color: #08844e;
+    color: black;
+    font-family: 'Card'
+}
+
+#Poker h3 {
+    border: 2px solid gold;
+    color: black;
+
+}
+
+/* Boat Link syling */
+
+#Boat {
+    background-color: #0b3c62;
+    color: #a58d6f;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .08em;
+}
+
+#Boat h3 {
+    color: #a58d6f;
+    border: 2px solid #a58d6f;
+}
+
+/* Drone Link Styling */
+
+#Drone {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1em;
+    background-color: #f3f3f3;
+    color: #3f6163;
+}
+
+#Drone h3 {
+    color: #3f6163;
+    border: 2px solid #3f6163;
+    border-radius: 5px;
+}
+
+#Drone p {
     font-weight: 600;
 }
 
 
-.bioFocusItem {
-    color: var(--midBlue);
-    font-size: 1.1em;
+.pageTitle {
+    float: left;
+    height: inherit;
 }
 
-#focusItemImages {
-    width: 60vw;
-    display: block;
-    margin: 0 auto;
+.logoSection {
+    justify-content: space-between;
+    float: right;
+    width: 0px;
+    transition: 1s;
+    transition-delay: .5s;
+    transition-timing-function: cubic-bezier(0.72, 1.39, 0.38, 0.95);
+    background-color: lightgray;
+    height: inherit;
+    display: flex;
     position: relative;
 }
 
-
-.imagesContainer {
+.linkOuter:hover .logoSection {
+    width: 275px;
+    transition: .3s;
     display: flex;
-    width: 60vw;
-    margin: 25px auto;
-    justify-content: space-around;
-    transition: .4s;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: -4px -1px 17px 3px black;
+    transition-timing-function: cubic-bezier(0.72, 1.39, 0.38, 0.95);
+}
+
+.linkOuter:hover .fa-solid {
     opacity: 0;
+    transition: .3s;
+    
+}
+
+.langLogo {
+    width: 50px;
+    display: inline;
+    height: 50px;
+    padding-top: 15px;
+}
+
+.pokerLogos .fa-solid {
+    color: gold;
+}
+
+.pokerLogos {
+    border-left: 5px solid gold;
+}
+
+.boatLogos {
+    border-left: 5px solid #a58d6f;
+    position: relative;
+}
+
+.logoSection .fa-solid {
     position: absolute;
+    left: -45px;
+    font-size: xx-large;
+    top: 27px;
 }
 
-.shown {
-    opacity: 1;
-    transition: .4s
+
+
+.droneLogos {
+    border-left: 5px solid #3f6163;
 }
 
-.gameImg {
-    width: 100px;
-    aspect-ratio: 1;
+.exampleFrame {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    transition: .6s;
+    border: none;
+    overflow: hidden;
+    height: 0px;
 }
 
-.drinkImg, .foodImg {
-    width: 200px;
-    aspect-ratio: 1.2;
-    border-radius: 10px;
+.iframeButton {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background-color: #6e80ba;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0 0 5px 5px;
 }
 
-#bottomInfo {
-    width: 100%;
+.buttonBuffer {
+    top: -25px;
+}
+
+.expand {
+    height: 600px;
+    transition: .6s;
+}
+
+.fa-solid {
+    transition: .5s;
+}
+
+a {
+    color: inherit;
+}
+
+#personal {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px solid rgb(109 64 64);
+    border-bottom: 2px solid rgb(109 64 64);
+}
+
+#personal {
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#personal h2 {
+    text-align: center;
+    margin: 30px auto;
+    width: 60%;
+    color: rgb(109 64 64);
+
+}
+
+
+.bioDetail {
+    color: #6d4040;
+    text-decoration: underline;
+    transition: .4s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bioDetail:hover {
+    color: #6e80ba;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+#detailsWindow {
+    height: 200px;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.games {
     display: flex;
-    justify-content: space-evenly;
-    font-weight: 600;
-    font-size: 15px;
-    margin: 10px auto 20px auto;
+    justify-content: space-around;
+    height: -webkit-fill-available;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.gamesImg {
+    width: 100px;
+    height: 100px;
+}
+
+.Window {
+    transition: 0.3s;
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+#default h3 {
+    position: relative;
+    top: 20px;
+    font-size: 1.8em;
+    color: #6d4040;
+}
+
+.transparent {
+    opacity: 0;
+    transition: 5s;
+    z-index: -50;
+}
+
+.gone {
+    display: none;
+}
+
+.drink {
+    display: flex;
+    justify-content: space-around;
+    height: -webkit-fill-available;
+}
+
+.cover ul {
+    padding-inline-start: 45%;
+    margin-inline-end: 40%;
+}
+
+
+.ImgDiv {
+    position: relative;
+    top: 5px;
+}
+
+.drinkImg {
+    height: 200px;
+    width: 325px;
+}
+
+
+.travelImg {
+    width: 100%;
+    height: 180px;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.caipirinha {
+    background-image: url(./images/caipirinha-cocktail.jpg)
+}
+
+.negroni {
+    background-image: url(./images/negroni.jpg);
+}
+
+
+.ImgDiv::after {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transition: 0.2s;
+    position: absolute;
+    font-size: 2.7em;
+}
+
+.ImgDiv:hover:after {
+    color: #ffffff00;
+}
+
+.tokyo::after {
+    content: "TOKYO";
+    right: 20%;
+    top: 34%;
+}
+
+.escondido::after {
+    content: "PUERTO ESCONDIDO";
+    font-size: 2em;
+    right: 0%;
+    top: 28%;
+}
+
+.samui::after {
+    content: "KOH SAMUI";
+    right: 8%;
+    width: 80%;
+    top: 21%;
+}
+
+.food {
+    height: 100%;
+}
+
+.foodDiv, .drinkDiv {
+    width: 30%;
+    height: 90%;
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 8px;
+}
+
+
+
+.carbonara {
+    background-image: url(./images/carbonara.jpg);
+}
+
+.ramen {
+    background-image: url(./images/ramen.jpg);
+}
+
+.goulash {
+    background-image: url(./images/goulash.jpg)
+}
+
+.cover {
+    color: #ffffff00;
+    background-color: #ffffff00;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.cover h5 {
+    margin-top: 0px;
+    font-size: 1.3em;
+    padding-top: 15px;
+}
+
+.cover p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.cover:hover {
+    color: white;
+    background-color: #80808099;
+    transition: 0.3s;
 }
