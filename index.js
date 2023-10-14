@@ -22,3 +22,9 @@ function showDetails(){
     setTimeout(targetWindow.classList.remove('transparent'), 500)
     
 }
+
+function showItems(id){
+    let target = document.getElementById(id);
+    target.classList.toggle('shown');
+
+}
