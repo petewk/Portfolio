@@ -307,7 +307,7 @@ a, a:hover, a:active, a:focus {
 
 @media screen and (max-width: 870px){
     * {
-        font-size: 0.8rem;
+        font-size: 1rem;
         max-width: 100vw;
     }
 
@@ -326,9 +326,8 @@ a, a:hover, a:active, a:focus {
     #navLinks {
         display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: end;
     line-height: 25px;
-    margin-right: 15px;
     }
 
     .navLink {
@@ -343,6 +342,8 @@ a, a:hover, a:active, a:focus {
         font-size: 1rem;
     }
 
+
+
     #pokerSlide .siteLinks {
         width: 75vw;
     }
@@ -352,13 +353,13 @@ a, a:hover, a:active, a:focus {
     }
 
     #workExamplesScroll, #bioSectionScroll {
-        height: 15px;
+        height: 45px;
     }
 
 
     #bioSection {
         margin-top: 30px;
-        height: default;
+        height: 85vh;
     }
 
     .lookingFor {
@@ -391,6 +392,18 @@ a, a:hover, a:active, a:focus {
     .drinkImg, .foodImg {
         width: 95px;
         margin: 0px 5px;
+    }
+
+    #personal {
+        height: 43vh;
+    }
+
+    #focusItemImages {
+        width: 100%;
+    }
+
+    .imagesContainer {
+        width: inherit;
     }
 
     #personal span {

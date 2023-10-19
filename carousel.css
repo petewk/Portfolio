@@ -148,7 +148,7 @@ iframe {
 
     .carousel-control {
         width: 40px !important;
-        height: 8.3%;
+        height: 60px;
     }
 
     .carousel-control i {
@@ -158,6 +158,11 @@ iframe {
     .iFrameContainer {
         padding: 15px 0px;
         flex-direction: column;
+    }
+
+    .slideHeaders {
+        height: 60px;
+        width: calc(100% - 125px)
     }
 
     .siteImgs {
