@@ -209,6 +209,10 @@ a, a:hover, a:active, a:focus {
     padding: 30px 0px 50px 50px;
 }
 
+.siteImgs{
+    display: none;
+}
+
 .linkOuter {
     border: 4px solid red;
     margin: 40px;
@@ -299,4 +303,101 @@ a, a:hover, a:active, a:focus {
     font-weight: 600;
     font-size: 15px;
     margin: 10px auto 20px auto;
+}
+
+@media screen and (max-width: 870px){
+    * {
+        font-size: 0.8rem;
+        max-width: 100vw;
+    }
+
+    iframe{
+        display: none;
+    }
+    .headerImg {
+        display: none;
+    }
+
+    #mainTitle {
+        font-size: 1.4rem;
+        margin-left: 15px;
+    }
+
+    #navLinks {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 25px;
+    margin-right: 15px;
+    }
+
+    .navLink {
+        margin: 0px 10px;
+    }
+
+    #taglineSpace {
+        margin: 0px;
+    }
+
+    .bioItem, .bioItem a {
+        font-size: 1rem;
+    }
+
+    #pokerSlide .siteLinks {
+        width: 75vw;
+    }
+
+    .siteLinks {
+        margin: 0px auto 5px auto !important;
+    }
+
+    #workExamplesScroll, #bioSectionScroll {
+        height: 15px;
+    }
+
+
+    #bioSection {
+        margin-top: 30px;
+        height: default;
+    }
+
+    .lookingFor {
+        padding: 25px;
+    }
+
+    .lookingFor ul {
+        padding-left: 10px;
+    }
+
+    .technologies {
+        padding: 0px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    }
+
+    .techImg {
+        width: 45px;
+        margin: 5px 5px;
+    }
+
+    .gameImg {
+        width: 50px
+    }
+
+    #ror2img {
+        width: 90px;
+    }
+
+    .drinkImg, .foodImg {
+        width: 95px;
+        margin: 0px 5px;
+    }
+
+    #personal span {
+        line-height: 20px;
+        width: 80vw;
+    display: block;
+    margin: 0 auto;
+
+    }
 }

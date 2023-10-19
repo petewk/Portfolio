@@ -7,21 +7,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d72bd5e58.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./carousel.css">
     <title>PK Code</title>
 </head>
 <body>
         <div id="headerBox"> 
             <h1 id="mainTitle">Pete Kerr  -  Portfolio</h1>
+            <div id="navLinks">
+                <a class="navLink" href="#">Top</a> &middot;
+                <a class="navLink" href="#workExamplesScroll">My Work</a> &middot;
+                <a class="navLink" href="#bioSectionScroll">About Me</a>
+                <a class="navLink" href="#personal">Personal</a>
+            </div>
 
-            <a class="navLink" href="#">Top</a> &middot;
-            <a class="navLink" href="#workExamplesScroll">My Work</a> &middot;
-            <a class="navLink" href="#bioSectionScroll">About Me</a>
-            <a class="navLink" href="#personal">Personal</a>
 
             <img id="portrait" class="headerImg" src="./images/portait.png">
             
@@ -77,6 +79,9 @@
                             </span>
                         </span>
                         <div class="iFrameContainer">
+                            <a href="https://boat-wiki.herokuapp.com/" target="_blank">
+                                <img class="siteImgs" src="./images/wikiscreen.png" alt="">
+                            </a>
                             <iframe class="iframeSlide" src="https://boat-wiki.herokuapp.com/"></iframe>
                             <div class="descriptionWindow">
                                 <h2>Wikipe-Dea</h2>
@@ -108,6 +113,9 @@
                             </span>
                         </span>
                         <div class="iFrameContainer">
+                            <a href="https://poker-timer-7367af045710.herokuapp.com/" target="_blank">
+                                <img class="siteImgs" src="./images/pokerscreen.png" alt="">
+                            </a>
                             <iframe class="iframeSlide" src="https://poker-timer-7367af045710.herokuapp.com/"></iframe>
                             <div class="descriptionWindow">
                                 <h2>Poker Round Timer</h2>
@@ -136,6 +144,9 @@
                             </span>
                         </span>
                         <div class="iFrameContainer">
+                            <a class="siteImgs" href="https://stevsite.netlify.app/" target="_blank">
+                                <img  src="./images/dronescreen.png" alt="">
+                            </a>
                             <iframe class="iframeSlide" src="https://stevsite.netlify.app/"></iframe>
                             <div class="descriptionWindow">
                                 <h2>Photography Company Website</h2>
@@ -210,8 +221,8 @@
                 </div>
                 <div class="imagesContainer" id="games">
                     <img class="gameImg" src="./images/rocketLeague.png" alt="">
-                    <img class="gameImg" src="./images/factorio.png" alt="">
                     <img class="gameImg" src="./images/ror2.png" id="ror2img" alt="">
+                    <img class="gameImg" src="./images/factorio.png" alt="">
                 </div>
             </span>
         </div>

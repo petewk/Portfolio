@@ -140,3 +140,60 @@ iframe {
 .fa-arrow-right, .fa-arrow-left {
     color: #0dcaf0;
 }
+
+@media screen and (max-width: 870px) {
+    .slidelangLogo {
+        height: 20px;
+    }
+
+    .carousel-control {
+        width: 40px !important;
+        height: 8.3%;
+    }
+
+    .carousel-control i {
+        font-size: 1.2em;
+    }
+
+    .iFrameContainer {
+        padding: 15px 0px;
+        flex-direction: column;
+    }
+
+    .siteImgs {
+        display: block;
+        width: 96%;
+        aspect-ratio: 1.78;
+        margin: 0 auto;
+    }
+
+    .slideTechLogos {
+        padding-bottom: 5px;
+    }
+
+    .descriptionWindow {
+        width: 100%;
+    padding: 15px;
+    position: initial;
+    }
+
+    .carousel-indicators {
+        bottom: 2px !important;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    #workExamples {
+        height: max-content !important;
+        width: 100%;
+    }
+
+    .carousel-inner {
+        padding-bottom: 55px !important;
+    }
+}
