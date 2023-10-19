@@ -160,6 +160,10 @@ iframe {
         flex-direction: column;
     }
 
+    #boatSlide > span > a.siteLinks {
+        margin: 0px 50px !important
+    }
+
     .slideHeaders {
         height: 60px;
         width: calc(100% - 125px)
